@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Emote</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #37474f;
+    min-height: 100%;
+  }
+</style>
+
+<body>
+
+  <!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+  <img src="emoteLogo.svg" alt="Emote logo" style="width:10em;height:10em;position:absolute;top:5em;right:5em;">
+  <div style="text-align:center;color:white;position:absolute;top:40%;left:20%;">
+    <h1>Emote</h1>
+    <p style="font-size:1em">&#9679; &#9679; &#9679;</p>
+    <p>Emotion AI Platform for Digital Devices</p>
+  </div>
+  <div style="color:white;position:absolute;bottom:5em;left:5em;">
+    <a href="https://www.instagram.com/emote.news/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/theemoteapp"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  </div>
+
+</nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#problem" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Problem</a>
+      <a href="#opportunity" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Opportunity</a>
+      <a href="#solution" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Solution</a>
+      <a href="#marketSize" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Market Size</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <!-- <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span> -->
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h2 class="w3-jumbo" style="color:#7CD11F"><b>Emote</b></h2>
+      <hr class="w3-opacity">
+      <h4 style="text-align:left">Emote is about building emotionally intelligent machines to craft truly personalized digital experiences. Our first product aims to alleviate the emotional burden of the news by giving users the ability to express how they feel about their news in a simple to use interface. We're excited to launch in the first quarter of 2019! Please subscribe or send an email if you're interested in knowing more about what we're doing.</h4>
+      <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+      <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+
+    </header>
+
+
+    <!-- Problem Section -->
+    <div style="margin:-24px;background-color:#cacaca" class="w3-container">
+    <div class="w3-content w3-justify w3-padding-32" style="background-color:#cacaca" id="problem">
+      <h2>Problem</h2>
+      <hr class="w3-opacity">
+      <p>The lack of self awareness costs the economy billions of dollars in productivity and significantly increases societal stress and limits overall happiness.
+      </p>
+    </div>
+    </div>
+
+    <!-- Opportunity Section -->
+    <div class="w3-content w3-justify w3-padding-32" id="opportunity">
+      <h2>Opportunity</h2>
+      <hr class="w3-opacity">
+      <p>Empowering users to develop better self awareness, starting by solving the emotional burden of the news.
+      </p>
+    </div>
+
+    <!-- Solution Section -->
+    <div style="margin:-24px;background-color:#cacaca" class="w3-container">
+    <div class="w3-content w3-justify w3-padding-32" id="solution">
+      <h2>Solution</h2>
+      <hr class="w3-opacity">
+      <p>The Emote News app, Emote Smart Watches and Wearables, Emote Voice Command Hardware and Software comprise the Emote Platform.
+      </p>
+    </div>
+    </div>
+
+
+    <!-- Market Size Section -->
+    <div class="w3-content w3-justify w3-padding-32" id="marketSize">
+      <h2>Market Size</h2>
+      <hr class="w3-opacity">
+      <p>120M</p>
+      <p>$16.2B in 2018 to $88.7B in 2023</p>
+      <p>Humanizing technology is the new competitive advantage.</p>
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-xlarge" style="margin:-24px;background-color:#cacaca">
+    <i class="w3-medium" style="padding-left:30em">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></i>
+    <!-- End footer -->
+  </footer>
+
+  <!-- END PAGE CONTENT -->
+  </div>
+
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+
+</body>
+
+</html>
